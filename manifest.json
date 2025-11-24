@@ -1,0 +1,55 @@
+{
+	"name": "TileBreaker",
+	"namespace": "Poleski",
+	"version_number": "1.0.0",
+	"description": "Customize tile break times to make tiles break faster or slower.",
+	"website_url": "",
+	"dependencies": [],
+	"extra": {
+		"godot": {
+			"authors": [
+				"Poleski"
+			],
+			"tags": [],
+			"description_rich": "",
+			"optional_dependencies": [],
+			"load_before": [],
+			"incompatibilities": [],
+			"compatible_mod_loader_version": [
+				"6.2.0"
+			],
+			"compatible_game_version": [
+				"1.1.1"
+			],
+			"config_schema": {
+				"$schema": "https://json-schema.org/draft/2020-12/schema",
+				"title": "TileBreaker Config",
+				"description": "Configure tile break times for floor, glass, and ice tiles",
+				"type": "object",
+				"properties": {
+					"floor_break_time": {
+						"type": "number",
+						"default": 4.0,
+						"minimum": 0.1,
+						"maximum": 20.0,
+						"description": "Time in seconds for floor tiles to break (vanilla: 2.0)"
+					},
+					"glass_break_time": {
+						"type": "number",
+						"default": 2.0,
+						"minimum": 0.1,
+						"maximum": 20.0,
+						"description": "Time in seconds for glass tiles to break (vanilla: 1.0)"
+					},
+					"ice_break_time": {
+						"type": "number",
+						"default": 2.0,
+						"minimum": 0.1,
+						"maximum": 20.0,
+						"description": "Time in seconds for ice tiles to break (vanilla: 1.0)"
+					}
+				}
+			}
+		}
+	}
+}
